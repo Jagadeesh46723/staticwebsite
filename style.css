@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #b38b6d;  /* A warm, slightly muted gold/brown */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #b38b6d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #96735a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below image */
+}
+
+/* Layout */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure header stays on top */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b38b6d;
+}
+
+section {
+    padding: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+#hero .hero-image {
+    width: 50%;
+}
+
+#hero .hero-content {
+    width: 45%; /* Adjust as needed */
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+/* Menu Preview Section */
+#menu-preview {
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    width: 30%; /* Adjust for desired number of items per row */
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.menu-item img {
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Reservations Section */
+#reservations form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#reservations form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#reservations form input,
+#reservations form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#reservations form textarea {
+    grid-column: 1 / span 2; /* Make textarea span both columns */
+    height: 120px;
+}
+
+#reservations form button {
+    grid-column: 1 / span 2;
+    padding: 1rem 2rem;
+    background-color: #b38b6d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reservations form button:hover {
+    background-color: #96735a;
+}
+
+/* Gallery Section */
+#gallery .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns */
+    gap: 1rem;
+}
+
+#gallery .gallery-images img {
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    text-align: left;
+}
+
+.contact-item i {
+    margin-right: 0.5rem;
+    color: #b38b6d;
+}
+
+/* Footer */
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+/* Menu Page Styles */
+#menu {
+    text-align: center;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.menu-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.menu-item .description {
+    color: #777;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #b38b6d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero .hero-image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #hero .hero-content {
+        width: 100%;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    #reservations form {
+        grid-template-columns: 1fr;
+    }
+
+    #reservations form textarea {
+        grid-column: 1;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

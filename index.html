@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Restaurant Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Your Restaurant</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-image">
+            <img src="images/hero.jpg" alt="Restaurant Interior">
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Your Restaurant</h1>
+            <p>Experience the finest dining in town.</p>
+            <a href="menu.html" class="button">View Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a family-owned restaurant dedicated to providing exceptional food and service. Our chefs use only the freshest, locally sourced ingredients to create unforgettable dishes.</p>
+        <p>Established in 2023, we strive to create a warm and inviting atmosphere for our guests.</p>
+    </section>
+
+    <section id="menu-preview">
+        <h2>Our Specialties</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/dish1.jpg" alt="Dish 1">
+                <h3>Dish Name 1</h3>
+                <p>Description of the dish.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish2.jpg" alt="Dish 2">
+                <h3>Dish Name 2</h3>
+                <p>Description of the dish.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish3.jpg" alt="Dish 3">
+                <h3>Dish Name 3</h3>
+                <p>Description of the dish.</p>
+            </div>
+        </div>
+        <a href="menu.html" class="button">See Full Menu</a>
+    </section>
+
+    <section id="reservations">
+        <h2>Make a Reservation</h2>
+        <p>Book your table in advance to ensure you don't miss out!</p>
+        <form action="#" method="post">  <!-- Replace # with your actual form submission endpoint -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" value="2" required>
+
+            <textarea id="message" name="message" placeholder="Special requests..."></textarea>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="images/dish4.jpg" alt="Food Image">
+            <img src="images/dish5.jpg" alt="Restaurant Image">
+            <img src="images/dish6.jpg" alt="Food Image">
+            <img src="images/dish7.jpg" alt="Restaurant Image">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us or get in touch!</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, Anytown, USA</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>(555) 123-4567</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@yourrestaurant.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Restaurant. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
